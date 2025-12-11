@@ -2,9 +2,9 @@
     --bg-dark: #6283a7;
     --bg-card: #6e93b8;
     --primary: #9AD9CF;
-    --secondary: #93C387;
+    --secondary: #91BA86;
     --text-main: #ffffff;
-    --text-muted: #e0f2fe;
+    --text-muted: #e4f5ff;
     --accent-glow: rgba(154, 217, 207, 0.25);
 }
 
@@ -16,6 +16,14 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+.p-text {
+    color: var(--text-main);
+}
+
+.homepage-title {
+    color: var(--text-muted);
 }
 
 .navbar {
@@ -76,16 +84,31 @@ footer {
 }
 
 .btn-primary {
-    background-color: var(--primary);
-    border-color: var(--primary);
-    color: #0f172a;
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    color: white;
     font-weight: 600;
 }
 
 .btn-primary:hover {
-    background-color: var(--secondary);
-    border-color: var(--secondary);
-    color: #fff;
+    background-color: var(--text-muted);
+    border-color: var(--text-muted);
+    color: var(--bg-dark);
+}
+
+.btn-primary:active {
+    animation: press 0.25s ease-in-out;
+    color: var(--text-main) !important;
+    background-color: var(--secondary) !important;
+    border-color: var(--secondary) !important;
+}
+
+@keyframes press {
+    0%   { transform: scale(1); }
+    40%  { transform: scale(0.9); }   
+    60%  { transform: scale(0.95); }  
+    80%  { transform: scale(0.98); }  
+    100% { transform: scale(1); }     
 }
 
 .form-control {
