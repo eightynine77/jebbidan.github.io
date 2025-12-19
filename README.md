@@ -1,5 +1,5 @@
 # eightynine77.github.io
-about me
+my portfolio site.
 
 the portfolio: https://eightynine77.github.io
 
